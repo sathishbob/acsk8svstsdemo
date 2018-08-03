@@ -11,8 +11,8 @@ spec:
     ports:
     - containerPort: 80
       protocol: TCP
-    imagePullSecrets:
-    - name: gafdevreg
+  imagePullSecrets:
+  - name: gafdevreg
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -36,8 +36,8 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
-        imagePullSecrets:
-        - name: gafdevreg
+      imagePullSecrets:
+      - name: gafdevreg
 ---
 apiVersion: v1
 kind: Pod
